@@ -1,0 +1,6 @@
+{
+    "jumpToAliasFile.alias": {
+        "component": "/Users/huxingzhao/code/webpack-demo/src/components",
+        "utils": "/Users/huxingzhao/code/webpack-demo/src/utils"
+    }
+}
