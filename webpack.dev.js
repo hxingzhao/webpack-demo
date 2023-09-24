@@ -7,7 +7,7 @@ module.exports = merge(common, {
     devtool: 'eval-source-map',
     devServer: {
         contentBase: './dist',
-        hot: true, // 启用 webpack 的模块热替换特性 test12
+        hot: true, // 启用 webpack 的模块热替换特性 test123
     },
     plugins: [
         // 这个插件的作用是在热加载时直接返回更新文件名，而不是文件的id 
