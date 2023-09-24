@@ -11,7 +11,7 @@ module.exports = merge(common, {
     },
     plugins: [
         // 这个插件的作用是在热加载时直接返回更新文件名，而不是文件的id 
-        // [HMR] Updated modules:  [HMR]  - ./example. js  [HMR] Update applied.
+        // [HMR] Updated modules:  [HMR]  - ./example. js  [HMR] Update applied.123
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ],
