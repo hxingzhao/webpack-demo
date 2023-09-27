@@ -1,38 +1,32 @@
 {
   "name": "webpack-demo",
-  "sideEffects": false,
   "version": "1.0.0",
-  "description": "",
+  "description": "webpack",
   "main": "index.js",
-  "private": true,
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "watch": "webpack --watch"
+    "lint": "npm run lint-eslint && npm run lint-stylelint",
+    "lint-eslint": "eslint -c .eslintrc.js --ext .ts,.tsx,.js src",
+    "lint-stylelint": "stylelint --config .stylelintrc.js src/**/*.{less,css,scss}"
   },
   "keywords": [],
-  "author": "胡星兆",
-  "license": "MIS",
-  "dependencies": {
-    "lodash": "^4.17.19"
-  },
+  "author": "xingzhao",
+  "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
-    "babel-loader": "^8.1.0",
-    "babel-plugin-lodash": "^3.3.4",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.6.0",
-    "file-loader": "^6.0.0",
-    "html-webpack-plugin": "^4.3.0",
-    "lodash-webpack-plugin": "^0.11.5",
-    "react": "^17.0.1",
-    "style-loader": "^1.2.1",
-    "terser-webpack-plugin": "^3.0.7",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.0.9"
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "prettier": "^3.0.3",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
+    "stylelint-order": "^6.0.3",
+    "typescript": "^5.2.2"
   }
 }
