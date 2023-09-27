@@ -1,0 +1,15 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space  # 缩进风格，可选配置有 tab 和 space 
+indent_size = 2  # 缩进大小
+end_of_line = lf # 换行符
+charset = utf-8  # 编码格式
+trim_trailing_whitespace = false # 去除多余的空格
+insert_final_newline = false # 在尾部插入一行
+
+[*.md]
+trim_trailing_whitespace = false
